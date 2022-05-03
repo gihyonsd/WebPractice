@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>kiosk</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header class="mainHeader">
+      <div class="logo">
+        <img src="img/mcdonald.png">
+      </div>
+      <nav>
+        <ul class="topMenu">
+          <li><a href="#">한국어</a>
+          </li>
+          <li><a href="#">ENG</a>
+          </li>
+          <li><a href="#">CHN</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main_box">
+      <div class="tabMenu">
+        <input type="radio" id="menu1" name="tab" checked>
+        <input type="radio" id="menu2" name="tab">
+        <input type="radio" id="menu3" name="tab">
+
+        <section class="buttons">
+          <label for="menu1">버거</label>
+          <label for="menu2">사이드</label>
+          <label for="menu3">디저트</label>
+        </section>
+
+        <div class="tabContent">
+          <ul>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/bigmac.png">
+                <div class="caption">
+                  <h2 id="menu1Name1">빅맥</h2>
+                  <div class="but">
+                    <button onclick="add1('a',5000);">빅맥</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/불고기버거.png">
+                <div class="caption">
+                  <h2 id="menu1Name2">불고기버거</h2>
+                  <div class="but">
+                    <button onclick="add2('b',4000);">불고기버거</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/1955.png">
+                <div class="caption">
+                  <h2 id="menu1Name3">1955버거</h2>
+                  <div class="but">
+                    <button onclick="add3('c',6000);">1955버거</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/Double.png">
+                <div class="caption">
+                  <h2 id="menu1Name4">더블불고기버거</h2>
+                  <div class="but">
+                    <button onclick="add4('d',4000);">더블불고기버거</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/shushu.png">
+                <div class="caption">
+                  <h2 id="menu1Name5">슈슈버거</h2>
+                  <div class="but">
+                    <button onclick="add5('e',5000);">슈슈버거</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/Arrabbiata.png">
+                <div class="caption">
+                  <h2 id="menu1Name6">리코타치즈버거</h2>
+                  <div class="but">
+                    <button onclick="add6('f',6000);">리코타치즈버거</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="tabContent">
+          <ul>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/sausage.png">
+                <div class="caption">
+                  <h2 id="menu2Name1">소세지스낵랩</h2>
+                  <div class="but">
+                    <button onclick="add7('g',2500);">소세지스낵랩</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/fry.png">
+                <div class="caption">
+                  <h2 id="menu2Name2">후렌치후라이</h2>
+                  <div class="but">
+                    <button onclick="add8('h',2000);">후렌치후라이</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/mac.png">
+                <div class="caption">
+                  <h2 id="menu2Name3">맥너겟</h2>
+                  <div class="but">
+                    <button onclick="add9('i',2000);">맥너겟</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/sanghai.png">
+                <div class="caption">
+                  <h2 id="menu2Name4">상하이치킨스낵랩</h2>
+                  <div class="but">
+                    <button onclick="add10('j',2500);">상하이치킨스낵랩</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/hash.png">
+                <div class="caption">
+                  <h2 id="menu2Name5">해쉬브라운</h2>
+                  <div class="but">
+                    <button onclick="add11('k',1500);">해쉬브라운</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/string.png">
+                <div class="caption">
+                  <h2 id="menu2Name6">스트링치즈</h2>
+
+                  <div class="but">
+                    <button onclick="add12('l',2000);">스트링치즈</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="tabContent">
+          <ul>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/mcflurry.png">
+                <div class="caption">
+                  <h2 id="menu3Name1">오레오맥플러리</h2>
+
+                  <div class="but">
+                    <button onclick="add13('m',3000);">오레오맥플러리</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="item">
+              <div class="product">
+                <img src="img/apple.png">
+                <div class="caption">
+                  <h2 id="menu3Name2">애플파이</h2>
+                  <div class="but">
+                    <button onclick="add14('n',3000);">애플파이</button>
+                  </div>
+                </div>
+              </div>
+            </li>
+        </div>
+
+
+      </div>
+
+      <div class="result">
+        <h3>주문내역</h3>
+        <form class="frm" action="">
+          <div class="orderdiv">
+            <div id="msg1"></div>
+            <div id="msg2"></div>
+            <div id="msg3"></div>
+            <div id="msg4"></div>
+            <div id="msg5"></div>
+            <div id="msg6"></div>
+            <div id="msg7"></div>
+            <div id="msg8"></div>
+            <div id="msg9"></div>
+            <div id="msg10"></div>
+            <div id="msg11"></div>
+            <div id="msg12"></div>
+            <div id="msg13"></div>
+            <div id="msg14"></div>
+            <div id="total"></div>
+          </div>
+        </form>
+        <div>
+          <button class="orderMenu" onclick="reset();">주문하기</button>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="copyright">
+      <div class="bottomfooter">
+        COPYRIGHT © by SungHyun. ALL RIGHTS RESERVED
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
