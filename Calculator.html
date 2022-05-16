@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <style>
+    @font-face {
+      font-family: 'ROKAFSlabSerifBold';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts2201-3@1.0/ROKAFSlabSerifBold.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    * {
+      margin: 0 auto;
+      font-family: 'ROKAFSlabSerifBold';
+    }
+
+    .calculator {
+      background-color: rgb(184, 184, 184);
+      height: 290px;
+      margin: 50px auto;
+      border-spacing: 0.5em;
+      border: 3px solid black;
+    }
+
+    #result {
+      width: 190px;
+      height: 30px;
+      text-align: right;
+      font-size: 1.5em;
+      border: 4px double gray;
+    }
+
+    .number {
+      position: relative;
+      bottom: 20px;
+      width: 25px;
+      height: 35px;
+      background-color: whitesmoke;
+      text-align: center;
+      box-shadow: 1px 0px 3px #444;
+      font-size: 0.8rem;
+    }
+
+    .number:active {
+      position: relative;
+      left: 0.1em;
+      box-shadow: none;
+    }
+
+    .sign {
+      position: relative;
+      bottom: 20px;
+      width: 25px;
+      height: 35px;
+      background-color: black;
+      text-align: center;
+      color: white;
+      box-shadow: 1px 0px 3px #444;
+      font-size: 1rem;
+    }
+
+    .sign:active {
+      position: relative;
+      left: 0.1em;
+      box-shadow: none;
+    }
+
+    .reset {
+      position: relative;
+      bottom: 20px;
+      background-color: red;
+      text-align: center;
+      color: white;
+      box-shadow: 1px 0px 3px #444;
+      font-size: 1rem;
+    }
+
+    .reset:active {
+      position: relative;
+      left: 0.1em;
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="calculator">
+    <tr>
+      <td colspan="4">
+        <input type="text" id="result">
+      </td>
+    </tr>
+    <tr>
+      <td class="number" onclick="add('7')">7</td>
+      <td class="number" onclick="add('8')">8</td>
+      <td class="number" onclick="add('9')">9</td>
+      <td class="sign" onclick="add('+')">+</td>
+    </tr>
+    <tr>
+      <td class="number" onclick="add('4')">4</td>
+      <td class="number" onclick="add('5')">5</td>
+      <td class="number" onclick="add('6')">6</td>
+      <td class="sign" onclick="add('-')">-</td>
+    </tr>
+    <tr>
+      <td class="number" onclick="add('1')">1</td>
+      <td class="number" onclick="add('2')">2</td>
+      <td class="number" onclick="add('3')">3</td>
+      <td class="sign" onclick="add('*')">x</td>
+    </tr>
+    <tr>
+      <td class="reset" onclick="clearDisplay()">c</td>
+      <td class="number" onclick="add('0')">0</td>
+      <td class="sign" onclick="compute()">=</td>
+      <td class="sign" onclick="add('/')">/</td>
+    </tr>
+  </table>
+  <script src="js/script1.js"></script>
+</body>
+
+</html>
